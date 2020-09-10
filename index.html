@@ -12,49 +12,47 @@
 	body { font-family:Courier New; }
 	</style>
   </head>
-  <body>   
-  <h1>AP - TF testing</h1>
-​
-  <form action="https://next.leadconduit.com/flows/5f441019fb577095e08dad84/sources/56ddf55401a7c994452e8ca5/submit?redir_url=http://www.google.com" method="post">
-  <fieldset>
-  First name: <input type="text" name="first_name" class="txt" onClick="myFunction()"/> <br />
-  Last name: &nbsp;<input type="text" name="last_name" class="txt" /> <br />
-  Phone: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="phone_1" class="txt" /> <br />
-  Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="email" class="txt" /> <br />
-  Zip Code: &nbsp;&nbsp;<input type="text" name="postal_code" class="txt" /> <br /><br />
-  
-  Type of Pest Needed:<br />
-  &nbsp;&nbsp;&nbsp;<input type="radio" name="type_of_pest_control" value="Indoor" class="txt2" /> Indoor<br />
-  &nbsp;&nbsp;&nbsp;<input type="radio" name="type_of_pest_control" value="Outdoor" class="txt2" /> Outdoor<br />
-  &nbsp;&nbsp;&nbsp;<input type="radio" name="type_of_pest_control" value="Both" class="txt2" /> Both <br /><br />
-  <input type="checkbox" name="disclaimer" /> By clicking this button, I hereby consent to receive...
- <br /> <br />
-  <input type="submit" value="Submit" id="mySubmit" />
-  </fieldset>
-  </form>
-  <div id="TF_URL"></div>
-<script type="text/javascript">
-function myFunction() {
-  document.getElementById("TF_URL").innerHTML = "<b>TF URL:</b> " + document.getElementById("xxTrustedFormToken_0").value;
-}
-</script>
-​
-<!-- Generate a TrustedForm Certificate -->
-<script type="text/javascript">
-  (function() {
-      var field = 'xxTrustedFormCertUrl';
-      var provideReferrer = false;
-      var invertFieldSensitivity = false;
-      var sandbox = true;
-      var tf = document.createElement('script');
-      tf.type = 'text/javascript'; tf.async = true;
-      tf.src = 'http' + ('https:' == document.location.protocol ? 's' : '') +
-        '://api.trustedform.com/trustedform.js?provide_referrer=' + escape(provideReferrer) + '&field=' + escape(field) + '&l='+new Date().getTime()+Math.random() + '&invert_field_sensitivity=' + invertFieldSensitivity + '&sandbox=' + sandbox;
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tf, s); }
-  )();
-</script>
-<noscript>
-    <img src="http://api.trustedform.com/ns.gif" />
-</noscript>
-​
+  <body>
+    <h1>AP - TF testing</h1>
+    <form action="https://next.leadconduit.com/flows/5f441019fb577095e08dad84/sources/56ddf55401a7c994452e8ca5/submit?redir_url=http://www.google.com" method="post">
+    <fieldset>
+    First name: <input type="text" name="first_name" class="txt" onClick="myFunction()"/> <br />
+    Last name: &nbsp;<input type="text" name="last_name" class="txt" /> <br />
+    Phone: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="phone_1" class="txt" /> <br />
+    Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="email" class="txt" /> <br />
+    Zip Code: &nbsp;&nbsp;<input type="text" name="postal_code" class="txt" /> <br /><br />
+    Type of Pest Needed:<br />
+    &nbsp;&nbsp;&nbsp;<input type="radio" name="type_of_pest_control" value="Indoor" class="txt2" /> Indoor<br />
+    &nbsp;&nbsp;&nbsp;<input type="radio" name="type_of_pest_control" value="Outdoor" class="txt2" /> Outdoor<br />
+    &nbsp;&nbsp;&nbsp;<input type="radio" name="type_of_pest_control" value="Both" class="txt2" /> Both <br /><br />
+    <input type="checkbox" name="disclaimer" /> By clicking this button, I hereby consent to receive...
+    <br /> <br />
+    <input type="submit" value="Submit" id="mySubmit" />
+    </fieldset>
+    </form>
+    <div id="TF_URL"></div>
+    <script type="text/javascript">
+      function myFunction() {
+        document.getElementById("TF_URL").innerHTML = "<b>TF URL:</b> " + document.getElementById("xxTrustedFormToken_0").value;
+      }
+    </script>
+    <!-- Generate a TrustedForm Certificate -->
+    <script type="text/javascript">
+      (function() {
+          var field = 'xxTrustedFormCertUrl';
+          var provideReferrer = false;
+          var invertFieldSensitivity = false;
+          var sandbox = true;
+          var tf = document.createElement('script');
+          tf.type = 'text/javascript'; tf.async = true;
+          tf.src = 'http' + ('https:' == document.location.protocol ? 's' : '') +
+            '://api.trustedform.com/trustedform.js?provide_referrer=' + escape(provideReferrer) + '&field=' + escape(field) + '&l='+new Date().getTime()+Math.random() + '&invert_field_sensitivity=' + invertFieldSensitivity + '&sandbox=' + sandbox;
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tf, s); }
+      )();
+    </script>
+    <noscript>
+      <img src="http://api.trustedform.com/ns.gif" />
+    </noscript>
+
   </body>
+</html>
